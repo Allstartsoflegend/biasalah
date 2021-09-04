@@ -42,7 +42,7 @@ async def get_readable_time(seconds: int) -> str:
 
 @register(outgoing=True, pattern="^.ping$")
 async def pingme(pong):
-    """ For .ping command, ping the userbot from any chat.  """
+    """For .ping command, ping the userbot from any chat."""
     await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     await pong.edit("**𝓚𝓮𝓬𝓮𝓹𝓪𝓽𝓪𝓷 𝓘𝓷𝓽𝓮𝓻𝓷𝓮𝓽 𝓚𝓪𝓶𝓾!**")
@@ -58,7 +58,7 @@ async def pingme(pong):
 
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
-    """ For .speed command, use SpeedTest to check server speeds. """
+    """For .speed command, use SpeedTest to check server speeds."""
     await spd.edit("`Kecepatan Internetmu Sedang Dihitung!.....🚀`")
     test = Speedtest()
 
